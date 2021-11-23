@@ -1,8 +1,8 @@
 FROM python:3.11.0a2-bullseye
 
-RUN apt update
-RUN apt install awscli -y
+RUN apt update && apt dist-upgrade -y && apt install awscli -y
 RUN python -m pip install boto3
+RUN apt clean all
 
 RUN mkdir /app
 
