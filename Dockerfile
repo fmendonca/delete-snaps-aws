@@ -1,5 +1,6 @@
 FROM alpine:3.14
 RUN apk add --no-cache python3 py3-pip \
+	&& apk upgrade --no-cache \
 	&& pip3 install awscli \
 	&& pip3 install boto3
 
