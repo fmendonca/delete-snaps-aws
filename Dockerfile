@@ -8,5 +8,5 @@ RUN mkdir /app
 
 COPY delete_snap_older.py /app
 
-CMD python /app/delete_snap_older.py $ARGS
+CMD python3 /app/delete_snap_older.py $ARGS
 
