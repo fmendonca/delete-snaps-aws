@@ -7,6 +7,6 @@ RUN apk add --no-cache python3 py3-pip \
 RUN mkdir /app
 
 COPY delete_snap_older.py /app
-
+# bla
 CMD python /app/delete_snap_older.py $ARGS
 
